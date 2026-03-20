@@ -1,1 +1,14 @@
-This is the detail page for task {{ task.id }}
+<h1>Task Detail</h1>
+<form action="{% url 'tasks:update' task.id %}" method="post">
+    {% csrf_token %}
+    <h2>{{ task.title }}</h2>
+    <p>{{ task.description }}</p>
+    <select name="status" id="status{{ task.id }}">
+        <option value="Not started">Not started</option>
+        <option value="In progress">In progress</option>
+        <option value="Completed">Completed</option>
+    </select>
+    <p>Owner: {{ task.owner }}</p>
+    <input type="submit" value="Update">
+    <a href="{% url 'tasks:index' %}">Back to tasks</a>
+</form>

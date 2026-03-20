@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+    <title>Tasks</title>
+</head>
+<body>
+<div id="nav">
+    <ul>
+        <li><a href="{% url 'tasks:index' %}">Tasks</a></li>
+        <li><a href="{% url 'tasks:task' %}">Create a new task</a></li>
+    </ul>
+</div>
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

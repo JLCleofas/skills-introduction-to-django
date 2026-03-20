@@ -1,8 +1,5 @@
-<style>
-    table, th, td {
-        border: 1px solid black;
-    }
-</style>
+{% extends 'base.html' %}
+{% block content %}
 {% if tasks %}
 <table>
     <tr>
@@ -21,3 +18,5 @@
     {% endfor %}
 </table>
 {% endif %}
+<a href="{% url 'tasks:task' %}">Create a new task</a>
+{% endblock %}

@@ -1,0 +1,131 @@
+[
+{
+    "model": "tasks.task",
+    "pk": 1,
+    "fields": {
+        "title": "Learn Django",
+        "description": "Because it is fun!",
+        "status": "In progress",
+        "owner": "Louie"
+    }
+},
+{
+    "model": "tasks.task",
+    "pk": 2,
+    "fields": {
+        "title": "Test admin add",
+        "description": "This is a test",
+        "status": "In progress",
+        "owner": "Admin"
+    }
+},
+{
+    "model": "tasks.task",
+    "pk": 3,
+    "fields": {
+        "title": "Test task from form",
+        "description": "This is a test",
+        "status": "Not Started",
+        "owner": "Louie"
+    }
+},
+{
+    "model": "tasks.task",
+    "pk": 4,
+    "fields": {
+        "title": "Test task from form",
+        "description": "This is a test",
+        "status": "Not Started",
+        "owner": "Louie"
+    }
+},
+{
+    "model": "tasks.task",
+    "pk": 5,
+    "fields": {
+        "title": "Test task from form 2",
+        "description": "This is a test again",
+        "status": "Not Started",
+        "owner": "Louie"
+    }
+},
+{
+    "model": "polls.question",
+    "pk": 1,
+    "fields": {
+        "question_text": "What's up?",
+        "pub_date": "2026-03-19T06:23:32Z"
+    }
+},
+{
+    "model": "polls.question",
+    "pk": 2,
+    "fields": {
+        "question_text": "How are you?",
+        "pub_date": "2026-03-19T06:00:56.781Z"
+    }
+},
+{
+    "model": "polls.choice",
+    "pk": 1,
+    "fields": {
+        "question": 1,
+        "choice_text": "Not much",
+        "votes": 2
+    }
+},
+{
+    "model": "polls.choice",
+    "pk": 2,
+    "fields": {
+        "question": 1,
+        "choice_text": "The sky",
+        "votes": 1
+    }
+},
+{
+    "model": "polls.choice",
+    "pk": 4,
+    "fields": {
+        "question": 2,
+        "choice_text": "I'm fine",
+        "votes": 1
+    }
+},
+{
+    "model": "polls.choice",
+    "pk": 5,
+    "fields": {
+        "question": 2,
+        "choice_text": "Not great",
+        "votes": 0
+    }
+},
+{
+    "model": "polls.choice",
+    "pk": 6,
+    "fields": {
+        "question": 2,
+        "choice_text": "Very busy",
+        "votes": 1
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$Tq1pOfAVP933JosEOGCBfR$KeYcdFYLICZctirng+gPeYtclA1RIXwODa9sw7iSDbI=",
+        "last_login": "2026-03-19T06:18:00.821Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@example.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-03-19T06:17:28.819Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

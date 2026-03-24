@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
+from django.contrib.auth import get_user_model
 from .models import Task
 # Create your views here.
 def index(request):
@@ -16,7 +17,7 @@ def contact(request):
 def task(request):
     return render(request, 'tasks/task.html')
 def create(request):
-    task = Task(title=request.POST['title'], description=request.POST['description'], owner=request.POST['owner'])
+    task = Task(title=request.POST['title'], description=request.POST['description'], owner=request.user)
     task.save()
     return HttpResponseRedirect(reverse('tasks:index'))
 def update(request, task_id):
